@@ -1,5 +1,8 @@
 package lectures.part2oop
 
+/**
+ *
+ * */
 object Objects {
 
   // SCALA DOES NOT HAVE CLASS-LEVEL FUNCTIONALITY ("static")
