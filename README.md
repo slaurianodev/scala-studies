@@ -1,6 +1,6 @@
 # scala-studies
 
-__Part 1 - Basics__ [here](/lectures/part1basics)
+__Part 1 - Basics__ [here](/src/main/scala/lectures/part1basics)
 * Called By Name (CBN) vs Called By Value (CBV)
 * Default arguments
 * Expressions
@@ -11,9 +11,10 @@ __Part 1 - Basics__ [here](/lectures/part1basics)
 * Functions
   * When need to loop, use recursion
 
-__Part 2 - Object-Oriented__ [here](/lectures/part2oop)
+__Part 2 - Object-Oriented__ [here](/src/main/scala/lectures/part2oop)
 * Inheritance
 * Method Notations
+  * Infix, Prefix and Postfix
 * Objects
 * Object-Oriented basics
 * Abstract and Traits
