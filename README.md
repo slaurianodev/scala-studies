@@ -11,10 +11,13 @@ __Part 1 - Basics__ [here](/src/main/scala/lectures/part1basics)
 * Functions
   * When need to loop, use recursion
 
-__Part 2 - Object-Oriented__ [here](/src/main/scala/lectures/part2oop)
+__Part 2 - Object-Oriented__ [here](/src/main/scala/lectures/part2oop)[exercises](/src/main/scala/exercises)
 * Inheritance
 * Method Notations
   * Infix, Prefix and Postfix
 * Objects
 * Object-Oriented basics
 * Abstract and Traits
+* Generics
+  * Methods, Variance problem(covariance +A, invariance A, contravariance -A)
+  * Bounded Types (B <: A)
