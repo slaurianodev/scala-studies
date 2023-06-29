@@ -11,7 +11,7 @@ __Part 1 - Basics__ [here](/src/main/scala/lectures/part1basics)
 * Functions
   * When need to loop, use recursion
 
-__Part 2 - Object-Oriented__ [here](/src/main/scala/lectures/part2oop)[exercises](/src/main/scala/exercises)
+__Part 2 - Object-Oriented__ [here](/src/main/scala/lectures/part2oop) [exercises](/src/main/scala/exercises)
 * Inheritance
 * Method Notations
   * Infix, Prefix and Postfix
