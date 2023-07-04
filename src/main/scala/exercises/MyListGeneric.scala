@@ -39,8 +39,7 @@ class Cons[+A](h: A, t: MyListGeneric[A]) extends MyListGeneric[A] {
 
   override def printElements: String =
     if(t.isEmpty) "" + h
-      // TODO fix the concatenation problem
-    else h + " " + t.printElements
+    else s"$h ${t.printElements}"
 }
 
 object ListTest extends App {
