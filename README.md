@@ -21,3 +21,5 @@ __Part 2 - Object-Oriented__ [here](/src/main/scala/lectures/part2oop) [exercise
 * Generics
   * Methods, Variance problem(covariance +A, invariance A, contravariance -A)
   * Bounded Types (B <: A)
+* Anonymous classes
+  * Instantiate types and override fields or methods on the spot
