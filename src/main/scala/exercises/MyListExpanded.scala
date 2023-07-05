@@ -45,7 +45,7 @@ abstract class MyListExpanded[+A] {
 
 }
 
-object Empty extends MyListExpanded[Nothing] {
+case object Empty extends MyListExpanded[Nothing] {
   override def head: Nothing = throw new NoSuchElementException
   override def tail: MyListExpanded[Nothing] = throw new NoSuchElementException
   override def isEmpty: Boolean = true
@@ -60,7 +60,7 @@ object Empty extends MyListExpanded[Nothing] {
   def ++[B >: Nothing](list: MyListExpanded[B]): MyListExpanded[B] = list
 }
 
-class Cons[+A](h: A, t: MyListExpanded[A]) extends MyListExpanded[A] {
+  case class Cons[+A](h: A, t: MyListExpanded[A]) extends MyListExpanded[A] {
   override def head: A = h
   override def tail: MyListExpanded[A] = t
   override def isEmpty: Boolean = false
@@ -120,6 +120,7 @@ trait MyTransformer[-A, B] {
 
 object ListExpandedTest extends App {
   val listOfIntegers: MyListExpanded[Int] = new Cons(1, new Cons(2, new Cons(3, Empty)))
+  val clonelistOfIntegers: MyListExpanded[Int] = new Cons(1, new Cons(2, new Cons(3, Empty)))
   val anotherListOfIntegers: MyListExpanded[Int] = new Cons(4, new Cons(5, Empty))
   val listOfStrings: MyListExpanded[String] = new Cons("Hello", new Cons("I Love you", new Cons("Want U Tell Your Name?", Empty)))
 
@@ -139,4 +140,7 @@ object ListExpandedTest extends App {
   println(listOfIntegers.flatMap(new MyTransformer[Int, MyListExpanded[Int]] {
     override def transform(elem: Int): MyListExpanded[Int] = new Cons(elem, new Cons(elem +1, Empty))
   }).toString)
+
+  // case classes implements equals by default :)ß
+  println(clonelistOfIntegers == listOfIntegers)
 }

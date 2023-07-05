@@ -16,6 +16,8 @@ __Part 2 - Object-Oriented__ [here](/src/main/scala/lectures/part2oop) [exercise
 * Method Notations
   * Infix, Prefix and Postfix
 * Objects
+  * Scala object = singleton instance
+  * Companion
 * Object-Oriented basics
 * Abstract and Traits
 * Generics
@@ -23,3 +25,6 @@ __Part 2 - Object-Oriented__ [here](/src/main/scala/lectures/part2oop) [exercise
   * Bounded Types (B <: A)
 * Anonymous classes
   * Instantiate types and override fields or methods on the spot
+* Case classes
+* Exceptions
+* Package and imports
